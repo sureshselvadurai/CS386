@@ -1,0 +1,54 @@
+/* Styles for the main grid container */
+#divMain {
+    display: grid;
+    height: 90vh;
+    margin: 10px;
+    grid-template-columns: 26% 1fr 20%;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+        "header header header" /* Header area */
+        "nav content ads" /* Navigation, content, and aside areas */
+        "nav footer footer"; /* Footer area */
+    row-gap: 3px;
+    column-gap: 3px;
+}
+
+/* Styles for the header area */
+#header {
+    grid-area: header;
+    padding: 1.2em;
+    background-color: #E1DC2E;
+    border: 2px solid black;
+}
+
+/* Styles for the content area */
+#article {
+    grid-area: content;
+    padding: 1.2em;
+    background-color: #E1DC2E;
+    border: 2px solid black;
+}
+
+/* Styles for the navigation area */
+#nav {
+    grid-area: nav;
+    padding: 1.2em;
+    background-color: #E1DC2E;
+    border: 2px solid black;
+}
+
+/* Styles for the aside/ads area */
+#aside {
+    grid-area: ads;
+    padding: 1.2em;
+    background-color: #E1DC2E;
+    border: 2px solid black;
+}
+
+/* Styles for the footer area */
+#footer {
+    grid-area: footer;
+    padding: 1.2em;
+    background-color: #E1DC2E;
+    border: 2px solid black;
+}
