@@ -1,0 +1,29 @@
+/* Styles for the input elements */
+.input {
+    background-color: #E9E9E9;
+    border: none; /* Removing the border */
+    padding: 7px;
+    width: 90%;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+/* Styles for the input headers */
+.inputHeader {
+    font-weight: bold;
+}
+
+/* Styles for the submit button */
+.submit {
+    background-color: #2BCA7F;
+    border: none; /* Removing the border */
+    padding: 7px;
+    width: 90%;
+    height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer; /* Changing cursor to a pointer */
+}

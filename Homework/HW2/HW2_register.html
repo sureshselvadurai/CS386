@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Setting title and character encoding for the webpage -->
+        <title>Register</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="HW2_register.css" />
+    </head>
+
+    <body>
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account</p>
+        <hr>
+        <br>
+
+        <form action="HW2_register.html" method="get">
+            <!--    Email Field-->
+            <label class="inputHeader" for="email">Email : </label>
+            <br>
+            <input type="text" placeholder="Enter Email" id="email" name="name" class="input" required>
+            <br>
+
+            <!--    Password Field-->
+            <br>
+            <label class="inputHeader" for="password">Password : </label>
+            <br>
+            <input type="password" placeholder="Enter Password" id="password" name="password" class="input" required>
+            <br>
+
+            <!--    RepeatPassword Field-->
+            <br>
+            <label class="inputHeader" for="repeatPassword">Repeat Password : </label>
+            <br>
+            <input type="password" placeholder="Repeat Password" id="repeatPassword" name="repeatPassword" class="input" required>
+            <br>
+
+            <br>
+            <hr>
+
+            <!--     Terms Text-->
+            <terms>
+                <p>
+                    By creating an account you agree to out
+                    <a href="#">
+                        Terms & Privacy.
+                    </a>
+                </p>
+            </terms>
+
+            <!--    Submit and Reset Button-->
+            <input type="submit" value="Register" class="submit">
+
+            <!--Account exist Text-->
+            <terms>
+                <p>
+                    Already have an account?
+                    <a href="#">
+                        Sign in
+                    </a>
+                </p>
+            </terms>
+
+        </form>
+    </body>
+</html>
