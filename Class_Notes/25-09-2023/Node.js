@@ -1,0 +1,5 @@
+let a = +prompt("Enter side A")
+let b = +prompt("Enter side B")
+let h = Math.sqrt(Math.pow(a,2)+Math.pow(b,2))
+alert(`The hypotenuse is ${h}`)
+console.log(`The hypotenuse is ${h}`)

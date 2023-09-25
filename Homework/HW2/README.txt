@@ -7,7 +7,7 @@ Student ID: 20766418
 
 The objective involves gaining proficiency in HTML forms and anchors,
 understanding the process of loading content into iframes,
-and mastering the setup of web pages using CSS grids.
+and mastering the setup of web pages using CSS grids.l
 
 Issues Faced - None
 Resources - None
