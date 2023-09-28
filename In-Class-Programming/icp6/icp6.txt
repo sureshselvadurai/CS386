@@ -1,0 +1,33 @@
+// Initialize an empty string to store prime numbers
+let strPrimeNums = "";
+
+// Variable to track whether a number is prime
+let isPrime = true;
+
+// Loop through numbers from 2 to 99 (exclusive)
+for(let o=2; o<=100; o++){
+
+    // Reset the prime flag for each iteration
+    isPrime = true;
+
+    // Check for factors of the current number
+    for(let i=2; i<=o; i++){
+
+        // Check if the current number is divisible by i
+        if(o % 2 === 0){
+            // If it is divisible, set isPrime to false
+            isPrime = false;
+        }
+    }
+
+    // If isPrime is true, the current number is prime
+    if(isPrime){
+        // Add the prime number to the string
+        strPrimeNums += ` ${o} \,`;
+    }
+}
+//Remove the last Comma
+strPrimeNums = strPrimeNums.substring(0, strPrimeNums.length - 2);
+
+// Print the prime numbers
+console.log(`Prime Numbers ${strPrimeNums} `);
