@@ -11,10 +11,10 @@ for(let o=2; o<=100; o++){
     isPrime = true;
 
     // Check for factors of the current number
-    for(let i=2; i<=o; i++){
+    for(let i=2; i<o; i++){
 
         // Check if the current number is divisible by i
-        if(o % 2 === 0){
+        if(o % i === 0){
             // If it is divisible, set isPrime to false
             isPrime = false;
         }
