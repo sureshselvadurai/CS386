@@ -1,0 +1,63 @@
+// Sales data for Jan-Dec for the years 2016-2018
+let sales = [
+  [345.54, 389.21, 745.90, 451.89, 395.67, 451.45, 598.42, 575.64, 523.78, 678.55, 874.56, 945.34],
+  [423.54, 423.87, 432.87, 534.77, 385.29, 642.89, 452.84, 523.88, 554.78, 767.90, 523.44, 899.34],
+  [623.87, 518.66, 372.67, 745.56, 634.56, 429.88, 528.67, 418.56, 276.52, 514.95, 639.52, 786.58]
+];
+
+// Function to calculate row total
+function fCalcRowTotal(sales, index) {
+  if (index < 0 || index > 2) {
+    return 'Invalid Row Index';
+  }
+  let rowTotal = 0;
+  for (let i = 0; i < sales[index].length; i++) {
+    rowTotal += sales[index][i];
+  }
+  return rowTotal.toFixed(2); // Truncate to 2 decimals
+}
+
+//console.log('Row total for year 2017:', fCalcRowTotal(sales, 1)); // Display row total for 2017
+//console.log('Row total for year 2017:', fCalcRowTotal(sales, 10)); // Testing an invalid index
+
+// Function to calculate column total
+function fCalcColTotal(sales, index) {
+  if (index < 0 || index > 11) {
+    return 'Invalid Month';
+  }
+  let colTotal = 0;
+  for (let i = 0; i < sales.length; i++) {
+    colTotal += sales[i][index];
+  }
+  return colTotal.toFixed(2); // Truncate to 2 decimals
+}
+
+// Function to calculate column average
+function fCalcColAverage(sales, colIndex) {
+  let colAverage = fCalcColTotal(sales, colIndex) / sales.length;
+  return colAverage.toFixed(2); // Truncate to 2 decimals
+}
+
+//console.log('Column total for month 5 (June):', fCalcColTotal(sales, 5)); // Display column total for June
+//console.log('Column total for month 5 (June):', fCalcColTotal(sales, 25)); // Testing an invalid index
+
+// Loop to display yearly and monthly totals
+let year = 2016;
+let month = 1;
+
+console.log('--------------------Totals per Year--------------------');
+let yearsTotal = 0;
+for (let i = 0; i < sales.length; i++) {
+  console.log(`Total sales for year ${year}: ${fCalcRowTotal(sales, i)}`);
+  yearsTotal += +fCalcRowTotal(sales, i);
+  year++;
+}
+console.log('-------------------------------------------------------');
+console.log(`Yearly average sales: ${yearsTotal / sales.length}`);
+
+console.log('--------------------Totals per Month--------------------');
+for (let j = 0; j < sales[0].length; j++) {
+  let formattedMonth = month < 10 ? `0${month}` : `${month}`;
+  console.log(`Total sales for month ${formattedMonth} = ${fCalcColTotal(sales, j)} (Monthly average sales = ${fCalcColAverage(sales, j)})`);
+  month++;
+}
