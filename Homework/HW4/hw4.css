@@ -1,0 +1,22 @@
+/* Style the fieldset element */
+fieldset {
+
+    padding: 20px;
+    border: 3px solid #0E44DE;
+    background-color: #DAE1F5;
+}
+
+/* Style label elements */
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+/* Style the asterisk with class attribute */
+.asterisk {
+    color: red;
+}
+
+hr {
+    border: 1px solid #E44DE ;
+}
