@@ -1,0 +1,17 @@
+/* FormValidation.css */
+fieldset {
+  border: 3px solid blue;
+  padding: 5px;
+  background-color: #D9E0F5;
+}
+
+label {
+  width: 120px;
+  display: inline-block;
+}
+
+span {
+  border: 1px solid black;
+}
+
+

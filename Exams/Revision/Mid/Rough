@@ -1,0 +1,46 @@
+// Step 1: Create a function fSumDigits
+function fSumDigits(pNum) {
+  let sum = 0;
+  for (let i = 0; i < pNum.length; i++) {
+    sum += parseInt(pNum[i]);
+  }
+  return sum;
+}
+
+// Step 2: Create a function fRemoveSpaces
+function fRemoveSpaces(pString) {
+  let newString = "";
+  for (let i = 0; i < pString.length; i++) {
+    if (pString[i] !== ' ') {
+      newString += pString[i];
+    }
+  }
+  return newString;
+}
+
+// Step 3: Create a function fVerifyCC
+function fVerifyCC(pCC) {
+  pCC = fRemoveSpaces(pCC);
+  let sum = 0;
+  for (let i = pCC.length - 1; i >= 0; i--) {
+    let digit = parseInt(pCC[i]);
+    if (i % 2 === 1) {
+      digit *= 2;
+      if (digit > 9) {
+        digit = Math.floor(digit / 10) + (digit % 10);
+      }
+    }
+    sum += digit;
+  }
+  if (sum % 10 === 0) {
+    return 'Valid';
+  } else {
+    return 'Invalid';
+  }
+}
+
+// Test the functions
+console.log(fSumDigits('3634')); // Should output 16
+console.log(fRemoveSpaces('4532 7787 7109 1795')); // Should output '4532778771091795'
+console.log(fVerifyCC('4532 7787 7109 1795')); // Should output 'Valid'
+console.log(fVerifyCC('4539 6779 0801 6808')); // Should output 'Invalid'
