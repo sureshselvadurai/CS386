@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="icp11.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="row" style="border: 5px solid; text-align: center; margin: 3px; padding: 3px; background-color: #e1e1e1;">
+            <h1 class="display-3">Tech Gadget Shopping</h1>
+        </div>
+
+        <!-- Cards -->
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/image1.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Description of Product 1.</p>
+                    </div>
+                    <div class="card-footer">
+                        Price: $100
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat the above card structure for Cards 2, 3, and 4 with different images and text -->
+
+        </div>
+
+        <!-- Footer -->
+        <div class="row" style="border: 5px solid; text-align: center; margin: 3px; padding: 3px; background-color: #e1e1e1;">
+            <h1 class="display-5">University of San Francisco</h1>
+            <address>
+                2130 Fulton Street<br>
+                San Francisco, CA 94117<br>
+                <a href="https://www.usfca.edu">usfca.edu</a>
+            </address>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include your JavaScript file -->
+    <script src="icp11.js"></script>
+</body>
+</html>
+
+
+
+
+window.addEventListener("resize", function () {
+    console.log("Window Width: " + window.innerWidth);
+});
+
+.card:hover {
+    border-color: #ff5733; /* Change to the color of your choice */
+    box-shadow: 0px 0px 10px 2px #ff5733; /* Change to the color of your choice */
+}
