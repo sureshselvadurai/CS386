@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #EDEDF3;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #B0B0B2;
+}
