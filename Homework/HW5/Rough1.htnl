@@ -1,0 +1,97 @@
+
+
+
+    <div class="global-nav__a11y-menu">
+
+            <!---->
+            <button id="ember11" class="global-nav__a11y-menu-close artdeco-button artdeco-button--circle artdeco-button--muted artdeco-button--2 artdeco-button--tertiary ember-view">    <li-icon aria-hidden="true" type="close" class="artdeco-button__icon" size="large"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                <path d="M13.42 12L20 18.58 18.58 20 12 13.42 5.42 20 4 18.58 10.58 12 4 5.42 5.42 4 12 10.58 18.58 4 20 5.42z"></path>
+            </svg></li-icon>
+
+                <span class="artdeco-button__text">
+    Close jump menu
+</span></button>
+        </div>
+
+
+        <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+
+    </div>
+
+<!--            Icon-->
+            <a class="app-aware-link " href="" >
+                <div class="ivm-image-view-model    global-nav__branding-logo">
+                    <div class="ivm-view-attr__img-wrapper display-flex">
+                        <li-icon size="large" role="img" aria-label="Suresh Raja">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                 width="24" height="24"  viewBox="0 0 24 24"
+                                 preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,24.000000) scale(0.100000,-0.100000)"
+                                   fill="#0077B5" stroke="none">
+                                    <path d="M0 120 l0 -120 120 0 120 0 0 120 0 120 -120 0 -120 0 0 -120z m111
+                                        70 c5 0 9 -10 9 -22 0 -21 0 -21 -14 -2 -12 15 -18 17 -33 8 -25 -16 -20 -27
+                                        19 -40 38 -13 48 -43 23 -68 -21 -21 -74 -21 -82 -1 -9 25 6 31 22 9 11 -15
+                                        17 -17 32 -8 26 16 22 38 -7 42 -32 5 -50 20 -50 43 0 21 39 51 58 44 8 -3 18
+                                        -5 23 -5z m99 -55 c0 -7 -9 -15 -20 -18 -22 -6 -27 -36 -8 -55 9 -9 4 -12 -23
+                                        -12 -23 0 -30 3 -20 9 9 6 12 21 9 45 -2 19 0 37 4 38 25 8 58 4 58 -7z"/>
+                                </g>
+                            </svg>
+                        </li-icon>
+                    </div>
+                </div>
+            </a>
+
+<!--            Search Icon : -->
+
+            <div id="global-nav-search" class="global-nav__search
+            ">
+
+
+                <div class="search-global-typeahead
+
+         global-nav__search-typeahead">
+
+                    <div id="global-nav-typeahead" class="search-global-typeahead__typeahead">
+                        <!---->
+
+                        <input class="search-global-typeahead__input" placeholder="Search" role="combobox" aria-autocomplete="list" aria-label="Search" aria-activedescendant="" aria-expanded="false" type="text">
+
+                        <div aria-hidden="true" class="search-global-typeahead__search-icon-container">
+                            <svg role="none" aria-hidden="true" class="search-global-typeahead__search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" data-supported-dps="16x16" data-test-icon="search-small">
+                                <!---->
+
+                                <use href="#search-small" width="16" height="16"></use>
+                            </svg>
+
+                        </div>
+                        <!---->          <div class="search-global-typeahead__overlay global-alert-offset-top
+              "></div>
+                        <!---->
+                    </div>
+
+                    <button class="search-global-typeahead__collapsed-search-button" aria-label="Click to start a search" type="button">
+        <span class="search-global-typeahead__collapsed-search-button-icon t-black--light">
+          <svg role="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" data-supported-dps="24x24" data-test-icon="search-medium">
+<!---->
+
+    <use href="#search-medium" width="24" height="24"></use>
+</svg>
+
+        </span>
+                        <div class="search-global-typeahead__collapsed-search-button-text t-black--light t-12 t-normal">
+                            Search
+                        </div>
+                    </button>
+
+                    <div id="ember13" class="ember-view"><!----></div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        </div>
