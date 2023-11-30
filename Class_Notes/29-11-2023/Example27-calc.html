@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculator</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+		<script src="Example27-4.js"></script><!--Change to 27-2, 27-3, 27-4 -->
+	</head>
+	<!--Body--> 
+	<body ng-app="mainApp"><!--Bootstrapping mainApp -->
+		<div ng-controller="CalculatorCtrl"><!--Attach controller -->
+			<input type="number" ng-model="num1" placeholder="Enter number 1" /><br />
+			<input type="number" ng-model="num2" placeholder="Enter number 2" /><br />
+			<button ng-click="add()">Add</button><!--On click invoke add method -->
+			<hr />
+			Result = {{result}}	<!--Display result -->		
+		</div>
+	</body>
+</html>		
+	

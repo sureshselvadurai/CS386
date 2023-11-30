@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ICP 16</title>
+        <link rel="stylesheet" href="icp16.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+        <script src="icp16.js"></script>
+    </head>
+<!--    Bootstrap-->
+    <body ng-app="spa">
+        <div id="nav">
+            <ul>
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/services">Services</a></li>
+                <li><a href="#/projects">Projects</a></li>
+            </ul>
+        </div>
+
+<!--        view-->
+        <div id="page-content">
+            <h1>AngularJS Single Page Application</h1>
+            <hr>
+            <div ng-view></div>
+        </div>
+    </body>
+</html>
