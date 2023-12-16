@@ -1,0 +1,7 @@
+:root {
+  --color-background-container: white;
+   --spacing-three-x:3px;
+   --color-text-active: var(--black-a90)
+   --black-a90: rgb(0 0 0/.9);
+   --color-brand: #0077B5;
+}
