@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Suresh Raja</title>
+        <link rel="stylesheet" type="text/css" href="../public/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="cssConfig.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+                integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy2n6AMsz9lZlEV96qreZ"
+              crossorigin="anonymous">
+        <script src="mainPage.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Logo/favicon.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-eOJnJwV3zJ0/F6Fq3t7Fq8p14g5P5Ffeg2bPIR9U8RvHT1Eu1xKgIVBUyJxgFeW9" crossorigin="anonymous">
+
+    </head>
+    <body>
+<!--    Start of navigation bar-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-left">
+            <a class="navbar-brand logo" href="main.html">
+                <img src="Logo/android-chrome-192x192.png" alt="Logo" class="logo">
+            </a>
+            <div class="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <input type="text" class="form-control" placeholder="Search Profile">
+            </div>
+        </div>
+
+        <menu>
+            <div class="navbar-center">
+                <ul>
+                    <li>
+                        <a href="main.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html"class="active-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                            </svg>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                            </svg>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="resume.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                            </svg>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                            </svg>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </menu>
+
+        <div class="navbar-right">
+            <div class="online">
+                <img src="Profile/dp.jpeg" class="nav-profile-img">
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--    End of navigation bar-->
+
+    <div class="container">
+        <div class="profile-main">
+
+            <div class="profile-container">
+                <img src="Profile/cover.jpeg" width="100%">
+                <div class="profile-container-inner">
+                    <img src="Profile/dp.jpeg" class="profile-pic">
+                    <h1>Suresh Raja</h1>
+                    <b>CS Grad Student @University of San Francisco | FullStack Developer | Ex - AI Consultant</b>
+                    <p>San Francisco, United States &middot; <a href="#">Contact Info</a></p>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4"/>
+                        </svg>Connect</a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-text-fill" viewBox="0 0 16 16">
+                            <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+                        </svg>Message</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>About</h2>
+
+                <p>👋 Hi, I’m <a href="https://github.com/sureshselvadurai" target="_blank">@sureshrajaselvadurai</a></p>
+                <p>🏫 Computer Science Grad Student <a href="https://www.usfca.edu/" target="_blank">@University of San Francisco</a></p>
+                <p>💼 Ex .. AI Consultant, KPMG | Center of Excellence, Goldman Sachs</p>
+                <p>🤗 Priors ... B.Tech - IIT Patna, Data Scientist - Kissht</p>
+                <p>👀 I’m interested in ... ML, Full Stack, Automation, Fintech</p>
+                <p>📫 How to reach me ... <a href="mailto:sureshrajaselvadurai@gmail.com">sureshrajaselvadurai@gmail.com</a></p>
+            </div>
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="experience/kpmg_logo.jpeg">
+                    <div>
+                        <h3>Consultant, Data Science and AI</h3>
+                        <b>KPMG &middot; Full-time</b>
+                        <b>Bengaluru, Karnataka, India</b>
+                        <p> Goldman Sachs | Contingent Worker | FCO Automation<br>
+                            o Digitization of BCE invoices with automated pre-processing and exception creation<br>
+                            o Workflow creation based on document type and Regex<br>
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="experience/1640671832895.jpeg">
+                    <div>
+                        <h3>Data Scientist</h3>
+                        <b>Kissht &middot; Full-time</b>
+                        <b>Mumbai Area, India</b>
+                        <p>• Developed a credit scoring model by using digi data and bureau data used for up selling, cross selling. rejecting and disposing millions per day<br>
+                            • Identified fraud networks by using digital data of consumers and Page Rank scorecard algorithm<br>
+                            • Automated business reports to track overall portfolio performance<br>
+                            • Optimized Marketing channel chains<br>
+                            • Developed, tested and created user-level variables relating to delinquency
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="experience/1631303087107.jpeg">
+                    <div>
+                        <h3>Domain Trader</h3>
+                        <b>Namekart &middot; Full-time</b>
+                        <b>Noida Area, India</b>
+                        <p>
+                            * 		• Help build high-quality domain portfolio by hedging through numbers by purchasing a large number of domains.<br>
+                            * 		• Built Web surf code for competitor behavior analysis.<br>
+                            * 		• Domain management and help sellers reach out to perfect buyers .<br>
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="education/b8ZlJ4A4_400x400.jpg">
+                    <div>
+                        <h3>University of San Francisco</h3>
+                        <b>Master of Science - MS, Computer Science</b>
+                        <b>Jul 2023 - May 2025</b>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Java</a>
+                <a href="#" class="skills-btn">JavaScript</a>
+                <a href="#" class="skills-btn">Spring Framework</a>
+                <a href="#" class="skills-btn">React</a>
+                <a href="#" class="skills-btn">Python</a>
+                <a href="#" class="skills-btn">Django</a>
+                <a href="#" class="skills-btn">MongoDB</a>
+                <a href="#" class="skills-btn">MySQL</a>
+                <a href="#" class="skills-btn">Git</a>
+                <a href="#" class="skills-btn">Microservices</a>
+                <a href="#" class="skills-btn">DevOps</a>
+                <a href="#" class="skills-btn">Cloud Computing</a>
+                <a href="#" class="skills-btn">Full-Stack</a>
+                <a href="#" class="skills-btn">Web Scraping</a>
+                <a href="#" class="skills-btn">Machine Learning</a>
+            </div>
+
+        </div>
+
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad</small>
+                <p>Checkout Suresh Raja Github profile</p>
+                <div>
+                    <img src="Logo/github-logo-2E3852456C-seeklogo.com.png">
+                    <img src="Profile/dp.jpeg">
+                </div>
+                <b>Find Fullstack and ML projects</b>
+                <a href="#" class="ad-link">Learn more</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>Certifications</h3>   
+                <div class="sidebar-people-row">
+                    <img src="Logo/fb_logo.png">
+                    <div>
+                        <h2>Meta Front-End Developer</h2>
+                        <p>Meta &middot; Feb 2020</p>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="Logo/ibm_logo.jpeg">
+                    <div>
+                        <h2>IBM Machine Learning</h2>
+                        <p>IBM &middot; Feb 2020</p>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                <div class="sidebar-useful-links">
+                    <a>About</a>
+                    <a href="https://github.com/sureshselvadurai">Github</a>
+                    <a href="https://www.linkedin.com/in/sureshrajaselvadurai/">LinkedIn</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    </body>
+</html>
